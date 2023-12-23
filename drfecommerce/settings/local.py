@@ -1,6 +1,7 @@
+import os
 from .base import *
 ALLOWED_HOSTS = []
-SECRET_KEY = 'wt!go1iiu4*+yl-^%3m&f95m%15ev!34ck-_7nmtc*&=cgzg_)'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 WSGI_APPLICATION = 'drfecommerce.wsgi.application'
 
 
